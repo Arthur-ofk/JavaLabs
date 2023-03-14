@@ -1,11 +1,8 @@
-import java.util.Scanner;
 
 public class Task6 {
-    public static void Age() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Введіть вік: ");
-        int age = input.nextInt();
-        input.close();
+    public String Age(int age) {
+        
+      
         String description;
 
         if (age % 10 == 1 && age != 11) {
@@ -16,6 +13,6 @@ public class Task6 {
             description = age + " років";
         }
 
-        System.out.println(description);
+        return description;
     }
 }

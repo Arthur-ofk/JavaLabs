@@ -17,4 +17,8 @@ public class Task1 {
         System.out.println("Кількість днів у цьому місяці: " + days);
     }
 
+    public char[] Grades(int math, int programming, int philosophy) {
+        return null;
+    }
+
 }

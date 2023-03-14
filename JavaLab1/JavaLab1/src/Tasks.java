@@ -1,7 +1,7 @@
 import java.util.Arrays;
-import java.util.function.IntFunction;
 
-import javax.swing.text.AbstractDocument.Content;
+
+
 
 public class Tasks {
    double A;

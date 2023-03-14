@@ -1,12 +1,13 @@
-import java.util.Scanner;
+
 
 public class Task4 {
-    public static void Palindrome() {
-        Scanner input = new Scanner(System.in);
+    String resp;
+    public String Palindrome(int number) {
+        
 
-        System.out.print("Введіть число  від 1000 до 9999: ");
+       
 
-        int number = input.nextInt();
+       
         if (number > 1000 && number < 9999) {
 
             int originalNumber = number;
@@ -19,12 +20,15 @@ public class Task4 {
             }
 
             if (originalNumber == reversedNumber) {
-                System.out.println(originalNumber + " є палiндромом.");
+                resp =originalNumber + " є палiндромом.";
+               return resp;
             } else {
-                System.out.println(originalNumber + " не є палiндромом.");
+                resp =originalNumber + " не є палiндромом.";
+                return resp;
             }
         } else {
-            System.out.println("неправильне число");
+            resp ="неправильне число";
+            return resp;
         }
     }
 

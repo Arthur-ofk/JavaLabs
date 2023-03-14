@@ -1,10 +1,9 @@
-import java.util.Scanner;
 
 public class Task5 {
-    public static void Month() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введіть номер місяця: ");
-        int month = scanner.nextInt();
+    String resp;
+    public String Month(int month) {
+       
+        
 
         int daysInMonth;
         switch (month) {
@@ -45,10 +44,11 @@ public class Task5 {
                 daysInMonth = 31;
                 break;
             default:
-                System.out.println("Введено неправильний номер місяця.");
-                return;
+                resp ="Введено неправильний номер місяця.";
+                return resp;
         }
-
-        System.out.println("Кількість днів у місяці: " + daysInMonth);
+ 
+        resp = "Кількість днів у місяці: " + daysInMonth;
+        return resp;
     }
 }

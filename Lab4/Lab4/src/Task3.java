@@ -1,30 +1,34 @@
-import java.util.Scanner;
+
 
 public class Task3 {
-    public static void Triangle() {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Введіть довжину сторони a: ");
-        double a = input.nextDouble();
-
-        System.out.print("Введіть довжину сторони b: ");
-        double b = input.nextDouble();
-
-        System.out.print("Введіть довжину сторони c: ");
-        double c = input.nextDouble();
+    String resp;
+    public  String Triangle(int a, int b,int  c) {
+       
 
         if (a + b > c && a + c > b && b + c > a) {
             if (a == b && b == c) {
-                System.out.println("Трикутник є рівностороннім.");
+                resp ="Трикутник є рівностороннім.";
+                return resp;
+               
             } else if (a == b || b == c || c == a) {
-                System.out.println("Трикутник є рівнобедреним.");
+                
+                resp ="Трикутник є рівнобедреним.";
+                return resp;
             } else if (a * a + b * b == c * c || b * b + c * c == a * a || c * c + a * a == b * b) {
-                System.out.println("Трикутник є прямокутним.");
+                
+                resp ="Трикутник є прямокутним.";
+                return resp;
             } else {
-                System.out.println("Трикутник є довільним.");
+                
+                resp ="Трикутник є довільним.";
+                return resp;
             }
         } else {
-            System.out.println("Такого трикутника не існує.");
+           
+            resp ="Такого трикутника не існує.";
+            return resp;
         }
     }
+
+    
 }
